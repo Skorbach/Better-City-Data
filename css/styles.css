@@ -2,3 +2,8 @@ body,html{
 	margin:0;
 	height:100%;
 }
+
+#map-canvas{
+
+	opacity:0.35;
+}
