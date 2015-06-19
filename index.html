@@ -1,16 +1,25 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Better City Data Toronto</title>
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
-</head>
-<body>
-
-
-	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-
-</body>
+  <head>
+    <style type="text/css">
+      html, body, #map-canvas { height: 100%; margin: 0; padding: 0;}
+    </style>
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcUlxS2nCDLGf0x3VYgcRl5OSFXJSVMvI">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: { lat: -34.397, lng: 150.644},
+          zoom: 8
+        };
+        var map = new google.maps.Map(document.getElementById('map-canvas'),
+            mapOptions);
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+  </head>
+  <body>
+<div id="map-canvas"></div>
+  </body>
 </html>
