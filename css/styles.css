@@ -1,9 +1,33 @@
-body,html{
-	margin:0;
-	height:100%;
+body {
+	background: #ecd7bc;
 }
-
 #map-canvas{
+	background: red;
+	width: 100%;
+	height: 500px;
+	
 
-	opacity:0.35;
+}
+.test {
+		width: 100%;
+	height: 100%;
+	background: red;
+	margin: auto;
+	
+}
+.wrap {
+	transform: perspective( 600px ) rotateX( 39.7deg );
+	margin: auto;
+	width: 110%;
+	left: -65px;
+position: relative;
+bottom: -200px;
+
+
+	
+}
+.table-view {
+	display: table;
+	height: 100%;
+	width: 100%;
 }

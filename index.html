@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-    
-    <style type="text/css">
-      html, body, #map-canvas { height: 700px;	 margin: 0; padding: 0;}
-    </style>
+ 
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
     <script type="text/javascript"
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcUlxS2nCDLGf0x3VYgcRl5OSFXJSVMvI">
     </script>
 
     <script type="text/javascript">
-      function initialize() {
+      function init() {
         var mapOptions = {
           center: { lat: 43.7001, lng: -79.4163},
           zoom: 12
@@ -19,7 +17,7 @@
         var map = new google.maps.Map(document.getElementById('map-canvas'),
             mapOptions);
       }
-      google.maps.event.addDomListener(window, 'load', initialize);
+      google.maps.event.addDomListener(window, 'load', init);
     </script>
 
     <link rel="stylesheet" type="text/css" href="css/styles.css">
@@ -27,12 +25,12 @@
   
 
   <body>
-	
-		<div id="map-canvas"></div>
-	
-	<div class="container">
-		<h1>Hello world</h1>
-	</div>
+  <div class="table-view">
+  	<div class="wrap">
+  		<div id="map-canvas"></div>
+  	</div>
+  </div>
+
 
   </body>
 
